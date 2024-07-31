@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <img src="assets/pexels-pixabay-76969.jpg" />
+    <nav>
+      <span>
+        <img src="assets/cloudy.png" alt="" />
+        <h1>Weather app</h1>
+      </span>
+      <div>
+        <input id="search" type="text" placeholder="Type a full country name" />
+        <div class="search-result">
+          <img src="assets/cloudy.png" />
+          <span class="degree-span"></span>
+          <div class="info">
+            <div class="location">
+              <span>location: </span>
+              <span class="loc-value">Undefined</span>
+            </div>
+
+            <div class="country">
+              <span>country: </span>
+              <span class="cou-value">Undefined</span>
+            </div>
+
+            <div class="degree">
+              <span>degree: </span>
+              <span class="deg-value">Undefined</span>
+            </div>
+
+            <div class="wind">
+              <span>wind-direction: </span>
+              <span class="wind-value">Undefined</span>
+            </div>
+          </div>
+          <button>More details</button>
+        </div>
+      </div>
+    </nav>
+    <div class="country-details">
+      <div class="flow-div"></div>
+      <div class="search-result">
+        <div style="display: flex; align-items: center;justify-content: space-around; width: 200px;">
+          <img src="assets/cloudy.png" />
+          <span class="location-name"></span>
+          <span class="degree-span"></span>
+        </div>
+        <i class="fa-solid fa-xmark"></i>
+        <div class="info">
+          <div class="location">
+            <span>location: </span>
+            <span class="loc-value">Undefined</span>
+          </div>
+          <div class="country">
+            <span>country: </span>
+            <span class="cou-value">Undefined</span>
+          </div>
+          <div class="degree">
+            <span>degree: </span>
+            <span class="deg-value">Undefined</span>
+          </div>
+          <div class="wind-dir">
+            <span>wind-direction: </span>
+            <span class="winddir-value">Undefined</span>
+          </div>
+          <div class="wind-speed">
+            <span>wind-speed: </span>
+            <span class="windspeed-value">Undefined</span>
+          </div>
+          <div class="humidity">
+            <span>Humidity: </span>
+            <span class="humidity">Undefined</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
